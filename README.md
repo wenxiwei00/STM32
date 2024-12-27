@@ -7,7 +7,7 @@ STM32F103C8T6新建程序让他跑起来
 ![image](https://github.com/user-attachments/assets/524122ee-a4ab-43b7-9736-0f0347ea5454)
 4. 我们还需要一些文件放在Startup里面，一个是用来说明STM32每个引脚对应的寄存器。还有一个是下图中的system文件，是用来配置时钟的。我们的主频72MHz就是这个两个文件配置的。把下面三个粘贴到startup
 ![image](https://github.com/user-attachments/assets/f82f4569-94a7-44b5-999b-a62da6be2016)
-为什么我们这里选的是.md的这个，这个是根据不同芯片选的，见下表
+为什么我们这里选的是.md的这个，这个是根据不同芯片选的，见下表（我们的C8T6是64k的flash）
 ![image](https://github.com/user-attachments/assets/029f9f20-01bc-4378-8ba9-394abc056167)
 5.我们还需要添加内核寄存器描述文件到我们的startup文件夹（第四步添加的是device support，现在添加的是core support）。（.c是一些内核配置函数，.h是一些内核寄存器描述文件。）
 ![image](https://github.com/user-attachments/assets/7d398071-a885-4d25-8a31-dd5045e0451b)
